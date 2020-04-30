@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 
 export const HomeHooks = () => {
   return <Text style={styles.paragraph}>Hello from HomeHooks</Text>;

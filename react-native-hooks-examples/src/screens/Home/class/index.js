@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 
 export default class Home extends Component {
   render() {

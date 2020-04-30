@@ -3,7 +3,6 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 import Home from 'appScreen/Home/Class';
 import {HomeHooks} from 'appScreen/Home/Hooks';
 
-
 export default class Wrapper extends Component {
   render() {
     return (
