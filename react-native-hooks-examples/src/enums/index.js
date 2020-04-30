@@ -4,4 +4,6 @@ export const Routes = {
   HomeHooks: 'HomeHooks',
   Messages: 'Messages',
   MessagesHooks: 'MessagesHooks',
+  Login: 'Login',
+  LoginHooks: 'LoginHooks',
 };

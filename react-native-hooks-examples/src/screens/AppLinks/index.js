@@ -25,7 +25,7 @@ export const AppLinks = props => {
 
       <LinkItem
         title="Go To Messages >"
-        description="Messages Component created ClassComponent"
+        description="Read state example created ClassComponent"
         goTo={Routes.Messages}
         navigation={props.navigation}
         style={{backgroundColor: 'steelblue'}}
@@ -33,10 +33,26 @@ export const AppLinks = props => {
 
       <LinkItem
         title="Go To MessagesHooks >"
-        description="MessagesHooks Component created Hooks"
+        description="Read state example created Hooks"
         goTo={Routes.MessagesHooks}
         navigation={props.navigation}
         style={{backgroundColor: 'steelblue'}}
+      />
+
+      <LinkItem
+        title="Go to Login >"
+        description="Set state example created ClassComponent"
+        goTo={Routes.Login}
+        navigation={props.navigation}
+        style={{backgroundColor: 'powderblue'}}
+      />
+
+      <LinkItem
+        title="Go to LoginHooks >"
+        description="Set state example created Hooks"
+        goTo={Routes.LoginHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'powderblue'}}
       />
     </ScrollView>
   );
