@@ -1,8 +1,16 @@
 import * as React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
-export const HomeHooks = () => {
-  return <Text style={styles.paragraph}>Hello from HomeHooks</Text>;
+export const HomeHooks = props => {
+  return (
+    <View>
+      <Text style={styles.paragraph}>Hello from HomeHooks</Text>
+      <Button
+        onPress={() => props.navigation.navigate('Home')}
+        title="GoToHome"
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({

@@ -1,23 +1,21 @@
 import React, {Component} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import Home from 'appScreen/Home/Class';
 import {HomeHooks} from 'appScreen/Home/Hooks';
+
+const Stack = createStackNavigator();
 
 export default class Wrapper extends Component {
   render() {
     return (
-      <SafeAreaView style={styles.container}>
-        <Home />
-        <HomeHooks />
-      </SafeAreaView>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="HomeHooks" component={HomeHooks} />
+        </Stack.Navigator>
+      </NavigationContainer>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});

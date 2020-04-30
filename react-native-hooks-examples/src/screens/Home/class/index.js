@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default class Home extends Component {
   render() {
-    return <Text style={styles.paragraph}>Hello from Home</Text>;
+    return (
+      <View>
+        <Text style={styles.paragraph}>Hello from Home</Text>
+        <Button
+          onPress={() => this.props.navigation.navigate('HomeHooks')}
+          title="GoToHomeHooks"
+        />
+      </View>
+    );
   }
 }
 
