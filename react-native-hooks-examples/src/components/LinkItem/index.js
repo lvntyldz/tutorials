@@ -4,7 +4,7 @@ import {AppButton} from 'appComponent/Button';
 
 export const LinkItem = props => {
   return (
-    <View style={styles.listItem}>
+    <View style={[styles.listItem, props.style]}>
       <AppButton
         title={props.title}
         onBtnPress={() => props.navigation.navigate(props.goTo)}

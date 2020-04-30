@@ -12,12 +12,31 @@ export const AppLinks = props => {
         description="Home Component created ClassComponent"
         goTo={Routes.Home}
         navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
       />
+
       <LinkItem
         title="Go To HomeHooks >"
         description="HomeHooks Component created Hooks"
         goTo={Routes.HomeHooks}
         navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
+      />
+
+      <LinkItem
+        title="Go To Messages >"
+        description="Messages Component created ClassComponent"
+        goTo={Routes.Messages}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
+      />
+
+      <LinkItem
+        title="Go To MessagesHooks >"
+        description="MessagesHooks Component created Hooks"
+        goTo={Routes.MessagesHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
       />
     </ScrollView>
   );
