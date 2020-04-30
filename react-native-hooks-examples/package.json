@@ -14,6 +14,8 @@
     "@react-navigation/native": "^5.1.7",
     "@react-navigation/stack": "^5.2.14",
     "appScreen": "./src/screens",
+    "appEnum": "./src/enums",
+    "appComponent": "./src/components",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
