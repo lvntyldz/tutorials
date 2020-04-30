@@ -9,7 +9,7 @@ import {MessagesHooks} from 'appScreen/Messages/Hooks';
 
 const Stack = createStackNavigator();
 
-export default class Wrapper extends Component {
+export default class App extends Component {
   render() {
     return (
       <NavigationContainer>
