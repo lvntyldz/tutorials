@@ -54,6 +54,22 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'powderblue'}}
       />
+
+      <LinkItem
+        title="Go To RangeCounter >"
+        description="RangeCounter Component created ClassComponent"
+        goTo={Routes.RangeCounter}
+        navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
+      />
+
+      <LinkItem
+        title="Go To RangeCounterHooks >"
+        description="RangeCounterHooks Component created Hooks"
+        goTo={Routes.RangeCounterHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
+      />
     </ScrollView>
   );
 };

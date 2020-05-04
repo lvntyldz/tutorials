@@ -10,6 +10,8 @@ import {MessagesHooks} from 'appScreen/Messages/Hooks';
 import {Routes} from 'appEnum';
 import Login from 'appScreen/Login/Class';
 import {LoginHooks} from 'appScreen/Login/Hooks';
+import {RangeCounter} from 'appScreen/RangeCounter/Class';
+import {RangeCounterHooks} from 'appScreen/RangeCounter/Hooks';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +27,11 @@ export default class App extends Component {
           <Stack.Screen name={Routes.HomeHooks} component={HomeHooks} />
           <Stack.Screen name={Routes.Login} component={Login} />
           <Stack.Screen name={Routes.LoginHooks} component={LoginHooks} />
+          <Stack.Screen name={Routes.RangeCounter} component={RangeCounter} />
+          <Stack.Screen
+            name={Routes.RangeCounterHooks}
+            component={RangeCounterHooks}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     );

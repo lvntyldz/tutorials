@@ -6,4 +6,6 @@ export const Routes = {
   MessagesHooks: 'MessagesHooks',
   Login: 'Login',
   LoginHooks: 'LoginHooks',
+  RangeCounter: 'RangeCounter',
+  RangeCounterHooks: 'RangeCounterHooks',
 };
