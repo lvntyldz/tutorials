@@ -12,4 +12,6 @@ export const Routes = {
   ProductItemCountHooks: 'ProductItemCountHooks',
   ProductPriceValue: 'ProductPriceValue',
   ProductPriceValueHooks: 'ProductPriceValueHooks',
+  ProductTitleValue: 'ProductTitleValue',
+  ProductTitleValueHooks: 'ProductTitleValueHooks',
 };

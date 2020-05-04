@@ -102,6 +102,22 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'powderblue'}}
       />
+
+      <LinkItem
+        title="Go To ProductTitleValue >"
+        description="ProductTitleValue Component created ClassComponent"
+        goTo={Routes.ProductTitleValue}
+        navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
+      />
+
+      <LinkItem
+        title="Go To ProductTitleValueHooks >"
+        description="ProductTitleValueHooks Component created Hooks"
+        goTo={Routes.ProductTitleValueHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'skyblue'}}
+      />
     </ScrollView>
   );
 };
