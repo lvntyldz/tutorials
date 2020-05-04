@@ -8,7 +8,7 @@ export const AppLinks = props => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <LinkItem
-        title="Go To Home >"
+        title="Home"
         description="Home Component created ClassComponent"
         goTo={Routes.Home}
         navigation={props.navigation}
@@ -16,7 +16,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To HomeHooks >"
+        title="HomeHooks"
         description="HomeHooks Component created Hooks"
         goTo={Routes.HomeHooks}
         navigation={props.navigation}
@@ -24,7 +24,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To Messages >"
+        title="Messages"
         description="Read state example created ClassComponent"
         goTo={Routes.Messages}
         navigation={props.navigation}
@@ -32,7 +32,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To MessagesHooks >"
+        title="MessagesHooks"
         description="Read state example created Hooks"
         goTo={Routes.MessagesHooks}
         navigation={props.navigation}
@@ -40,7 +40,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go to Login >"
+        title="Login"
         description="Set state example created ClassComponent"
         goTo={Routes.Login}
         navigation={props.navigation}
@@ -48,7 +48,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go to LoginHooks >"
+        title="LoginHooks"
         description="Set state example created Hooks"
         goTo={Routes.LoginHooks}
         navigation={props.navigation}
@@ -56,7 +56,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To RangeCounter >"
+        title="RangeCounter"
         description="RangeCounter Component created ClassComponent"
         goTo={Routes.RangeCounter}
         navigation={props.navigation}
@@ -64,7 +64,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To RangeCounterHooks >"
+        title="RangeCounterHooks"
         description="RangeCounterHooks Component created Hooks"
         goTo={Routes.RangeCounterHooks}
         navigation={props.navigation}
@@ -72,7 +72,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To ProductItemCount >"
+        title="ProductItemCount"
         description="Update multi state object example created ClassComponent"
         goTo={Routes.ProductItemCount}
         navigation={props.navigation}
@@ -80,7 +80,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To ProductItemCountHooks >"
+        title="ProductItemCountHooks"
         description="Update multi state object example created Hooks"
         goTo={Routes.ProductItemCountHooks}
         navigation={props.navigation}
@@ -88,7 +88,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go to ProductPriceValue >"
+        title="ProductPriceValue"
         description="Use prev state example created ClassComponent"
         goTo={Routes.ProductPriceValue}
         navigation={props.navigation}
@@ -96,7 +96,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go to ProductPriceValueHooks >"
+        title="ProductPriceValueHooks"
         description="SUse prev state example created Hooks"
         goTo={Routes.ProductPriceValueHooks}
         navigation={props.navigation}
@@ -104,7 +104,7 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To ProductTitleValue >"
+        title="ProductTitleValue"
         description="ProductTitleValue Component created ClassComponent"
         goTo={Routes.ProductTitleValue}
         navigation={props.navigation}
@@ -112,11 +112,27 @@ export const AppLinks = props => {
       />
 
       <LinkItem
-        title="Go To ProductTitleValueHooks >"
+        title="ProductTitleValueHooks"
         description="ProductTitleValueHooks Component created Hooks"
         goTo={Routes.ProductTitleValueHooks}
         navigation={props.navigation}
         style={{backgroundColor: 'skyblue'}}
+      />
+
+      <LinkItem
+        title="ShipmentDescValue"
+        description="Read state example created ClassComponent"
+        goTo={Routes.ShipmentDescValue}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
+      />
+
+      <LinkItem
+        title="ShipmentDescValueHooks"
+        description="Read state example created Hooks"
+        goTo={Routes.ShipmentDescValueHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
       />
     </ScrollView>
   );
