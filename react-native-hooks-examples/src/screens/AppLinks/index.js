@@ -70,6 +70,22 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'skyblue'}}
       />
+
+      <LinkItem
+        title="Go To ProductItemCount >"
+        description="Update multi state object example created ClassComponent"
+        goTo={Routes.ProductItemCount}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
+      />
+
+      <LinkItem
+        title="Go To ProductItemCountHooks >"
+        description="Update multi state object example created Hooks"
+        goTo={Routes.ProductItemCountHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'steelblue'}}
+      />
     </ScrollView>
   );
 };

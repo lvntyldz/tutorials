@@ -8,4 +8,6 @@ export const Routes = {
   LoginHooks: 'LoginHooks',
   RangeCounter: 'RangeCounter',
   RangeCounterHooks: 'RangeCounterHooks',
+  ProductItemCount: 'ProductItemCount',
+  ProductItemCountHooks: 'ProductItemCountHooks',
 };

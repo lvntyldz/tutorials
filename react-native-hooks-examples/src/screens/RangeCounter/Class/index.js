@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {Button, StyleSheet, Text, View, TextInput} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import {AppButton} from 'appComponent/Button';
 import {Routes} from 'appEnum';
 
-export class RangeCounter extends Component {
+export default class RangeCounter extends Component {
   constructor(props) {
     super(props);
     this.state = {
