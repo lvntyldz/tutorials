@@ -14,6 +14,8 @@ import RangeCounter from 'appScreen/RangeCounter/Class';
 import {RangeCounterHooks} from 'appScreen/RangeCounter/Hooks';
 import ProductItemCount from 'appScreen/ProductItemCount/Class';
 import {ProductItemCountHooks} from 'appScreen/ProductItemCount/Hooks';
+import ProductPriceValue from 'appScreen/ProductPriceValue/Class';
+import {ProductPriceValueHooks} from 'appScreen/ProductPriceValue/Hooks';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +43,14 @@ export default class App extends Component {
           <Stack.Screen
             name={Routes.ProductItemCountHooks}
             component={ProductItemCountHooks}
+          />
+          <Stack.Screen
+            name={Routes.ProductPriceValue}
+            component={ProductPriceValue}
+          />
+          <Stack.Screen
+            name={Routes.ProductPriceValueHooks}
+            component={ProductPriceValueHooks}
           />
         </Stack.Navigator>
       </NavigationContainer>
