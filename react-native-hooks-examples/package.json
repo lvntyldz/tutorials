@@ -15,6 +15,7 @@
     "@react-navigation/stack": "^5.2.14",
     "appScreen": "./src/screens",
     "appEnum": "./src/enums",
+    "appUtil": "./src/utils",
     "appComponent": "./src/components",
     "react": "16.11.0",
     "react-native": "0.62.2",
