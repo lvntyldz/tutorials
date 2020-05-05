@@ -142,6 +142,14 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'yellow'}}
       />
+
+      <LinkItem
+        title="ToastMessageHooks"
+        description="Use referance to access component's element"
+        goTo={Routes.ToastMessageHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'yellow'}}
+      />
     </ScrollView>
   );
 };
