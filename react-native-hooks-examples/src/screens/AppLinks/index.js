@@ -134,6 +134,14 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'steelblue'}}
       />
+
+      <LinkItem
+        title="DateRangeHooks"
+        description="Use memo to memoized component"
+        goTo={Routes.DateRangeHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'yellow'}}
+      />
     </ScrollView>
   );
 };

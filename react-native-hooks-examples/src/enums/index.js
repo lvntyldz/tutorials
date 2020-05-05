@@ -16,4 +16,5 @@ export const Routes = {
   ProductTitleValueHooks: 'ProductTitleValueHooks',
   ShipmentDescValue: 'ShipmentDescValue',
   ShipmentDescValueHooks: 'ShipmentDescValueHooks',
+  DateRangeHooks: 'DateRangeHooks',
 };
