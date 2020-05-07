@@ -18,4 +18,5 @@ export const Routes = {
   ShipmentDescValueHooks: 'ShipmentDescValueHooks',
   DateRangeHooks: 'DateRangeHooks',
   ToastMessageHooks: 'ToastMessageHooks',
+  CounterHooks: 'CounterHooks',
 };

@@ -22,6 +22,7 @@ import ShipmentDescValue from 'appScreen/ShipmentDescValue/Class';
 import {ShipmentDescValueHooks} from 'appScreen/ShipmentDescValue/Hooks';
 import {DateRangeHooks} from 'appScreen/DateRangeHooks';
 import {ToastMessageHooks} from 'appScreen/ToastMessageHooks';
+import {CounterHooks} from 'appScreen/CounterHooks';
 
 const Stack = createStackNavigator();
 
@@ -82,6 +83,7 @@ export default class App extends Component {
             name={Routes.ToastMessageHooks}
             component={ToastMessageHooks}
           />
+          <Stack.Screen name={Routes.CounterHooks} component={CounterHooks} />
         </Stack.Navigator>
       </NavigationContainer>
     );

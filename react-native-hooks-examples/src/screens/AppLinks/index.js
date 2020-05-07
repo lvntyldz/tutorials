@@ -150,6 +150,14 @@ export const AppLinks = props => {
         navigation={props.navigation}
         style={{backgroundColor: 'yellow'}}
       />
+
+      <LinkItem
+        title="CounterHooks"
+        description="cache method with useMemo"
+        goTo={Routes.CounterHooks}
+        navigation={props.navigation}
+        style={{backgroundColor: 'yellow'}}
+      />
     </ScrollView>
   );
 };
