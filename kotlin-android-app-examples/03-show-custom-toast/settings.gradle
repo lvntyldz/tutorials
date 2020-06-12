@@ -1,0 +1,2 @@
+rootProject.name='ShowCustomToast'
+include ':app'
