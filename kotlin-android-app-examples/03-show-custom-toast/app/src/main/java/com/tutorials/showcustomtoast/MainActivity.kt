@@ -15,14 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         showToastBtn.setOnClickListener {
-            createCustomToast(
-                message = "Custom Toast Message",
-                imageSrc = R.drawable.info
-            )
+            showCustomToast("Custom Toast Message", R.drawable.info)
         }
     }
 
-    fun createCustomToast(message: String, imageSrc: Int) {
+    fun showCustomToast(message: String, imageSrc: Int) {
         val toast = Toast(this)
         toast.apply {
             val layout =
