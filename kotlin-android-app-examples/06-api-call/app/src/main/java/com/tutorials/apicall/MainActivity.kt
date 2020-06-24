@@ -2,8 +2,10 @@ package com.tutorials.apicall
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
 import okhttp3.*
 import okio.IOException
+
 
 class MainActivity : AppCompatActivity() {
     private val client = OkHttpClient()
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        run("https://jsonplaceholder.typicode.com/photos")
+        run("https://jsonplaceholder.typicode.com/albums/1/photos")
     }
 
     fun run(url: String) {
@@ -27,7 +29,11 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call, response: Response) {
                 println("Success...")
-                println(response.body?.string())
+                val responseStr = response.body?.string()
+                val photos: List<Photo> =
+                    Gson().fromJson(responseStr, Array<Photo>::class.java).toList()
+
+                println("photo : $photos")
             }
         })
     }
