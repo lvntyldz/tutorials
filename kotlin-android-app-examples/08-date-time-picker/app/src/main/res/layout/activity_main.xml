@@ -15,10 +15,23 @@
         android:textSize="30dp"
         android:padding="10dp" />
 
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:padding="10dp" />
+
     <Button
         android:id="@+id/changeDateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Change Date" />
+
+    <Button
+        android:id="@+id/changeTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Time" />
 
 </LinearLayout>
