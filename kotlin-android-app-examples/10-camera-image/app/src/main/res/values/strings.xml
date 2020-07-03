@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CameraImage</string>
+    <string name="permission_denied_msg">You have no permission for this!</string>
 </resources>
