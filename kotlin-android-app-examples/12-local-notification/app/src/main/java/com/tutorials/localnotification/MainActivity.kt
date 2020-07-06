@@ -47,15 +47,15 @@ class MainActivity : AppCompatActivity() {
                 notificationBuilder = Notification.Builder(this, channelId)
                         .setContentTitle(notificationTitle)
                         .setContentText(notificationContent)
-                        .setSmallIcon(R.drawable.notify)
-                        .setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.notify))
+                        .setSmallIcon(R.mipmap.notify)
+                        .setLargeIcon(BitmapFactory.decodeResource(resources, R.mipmap.notify))
                         .setContentIntent(pendingIntent)
             } else {
                 notificationBuilder = Notification.Builder(this)
                         .setContentTitle(notificationTitle)
                         .setContentText(notificationContent)
-                        .setSmallIcon(R.drawable.notify)
-                        .setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.notify))
+                        .setSmallIcon(R.mipmap.notify)
+                        .setLargeIcon(BitmapFactory.decodeResource(resources,R.mipmap.notify))
                         .setContentIntent(pendingIntent)
             }
 
