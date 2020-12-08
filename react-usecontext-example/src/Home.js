@@ -1,25 +1,34 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import {AppContext} from "./App";
 
-export const Home = () =>{
-
-    const context = useContext(AppContext);
-
-    const navigateToLogin = () => {
-        let content = Object.assign({}, context.content);
+export default class Home extends React.Component {
+    navigateToLogin = (props) => {
+        let content = Object.assign({}, props.content);
         content.screen = "Login";
         content.language = "TR";
         content.currency = "TRY";
-        context.setContent(content);
+        props.setContent(content);
     }
 
-    return (
-        <div>
-            home screen...<br/>
-            language : {context.content.language} <br/>
-            currency : {context.content.currency}
-            <hr/>
-            <button onClick={navigateToLogin}>Navigate to Login</button>
-        </div>
-    );
+    render() {
+
+        return (
+            <AppContext.Consumer>
+                {
+                    (props) => {
+                        return (<div>
+                                home screen...<br/>
+                                language : {props.content.language} <br/>
+                                currency : {props.content.currency}
+                                <hr/>
+                                <button onClick={() => this.navigateToLogin(props)}>Navigate to Login</button>
+                            </div>
+                        )
+                    }
+                }
+            </AppContext.Consumer>
+        );
+
+    }
+
 }

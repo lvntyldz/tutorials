@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Home} from './Home';
+import Home from './Home';
 import {Login} from './Login';
 
 export const AppContext = React.createContext();
@@ -7,8 +7,8 @@ export const AppContext = React.createContext();
 function App() {
 
     const [content, setContent] = useState({
-        language: 'TR',
-        currency: 'TRY',
+        language: 'EN',
+        currency: 'USD',
         screen: 'Home',
     });
 
