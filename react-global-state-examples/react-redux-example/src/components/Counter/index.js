@@ -7,19 +7,20 @@ class Counter extends Component {
   }
 
   render() {
-    const { value, onIncrement, onDecrement } = this.props
+    const { mainState, onIncrement, onDecrement } = this.props
     return (
       <p>
-        Count : {value}
-        <button onClick={onIncrement}>+</button>
-        <button onClick={onDecrement}>-</button>
+        Count : {mainState.count}
+        <hr />
+        <button onClick={onIncrement}> + </button>
+        <button onClick={onDecrement}> - </button>
       </p>
     )
   }
 }
 
 Counter.propTypes = {
-  value: PropTypes.number.isRequired,
+  mainState: PropTypes.object.isRequired,
   onIncrement: PropTypes.func.isRequired,
   onDecrement: PropTypes.func.isRequired
 }

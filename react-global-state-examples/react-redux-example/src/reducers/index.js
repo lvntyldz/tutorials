@@ -1,12 +1,29 @@
-import { actionTypes } from "../ActionTypes"
+import { actionTypes } from "../actionTypes"
 
-export default (state = 0, action) => {
+const increaseCount = (state) => {
+  let newState = { ...state };
+  newState.count += 1;
+  return newState
+}
+
+const decreaseCount = (state) => {
+  let newState = { ...state };
+  newState.count -= 1;
+  return newState
+}
+
+export default (state = { count: 0 }, action) => {
+
   switch (action.type) {
+
     case actionTypes.INCREMENT:
-      return state + 1
+      return increaseCount(state)
+
     case actionTypes.DECREMENT:
-      return state - 1
+      return decreaseCount(state)
+
     default:
       return state
+
   }
 }
