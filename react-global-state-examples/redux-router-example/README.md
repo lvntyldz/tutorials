@@ -1,0 +1,1 @@
+contains simple redux implementation with up to date react and redux version
