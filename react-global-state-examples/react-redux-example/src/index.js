@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import { actionTypes } from './ActionTypes'
+import Counter from './components/Counter'
+import counter from './reducers'
 
-ReactDOM.render(
+const store = createStore(counter)
+
+const render = () => ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Counter
+      value={store.getState()}
+      onIncrement={() => store.dispatch({ type: actionTypes.INCREMENT })}
+      onDecrement={() => store.dispatch({ type: actionTypes.DECREMENT })}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render();
+store.subscribe(render);
