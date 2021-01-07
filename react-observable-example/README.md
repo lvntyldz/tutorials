@@ -1,10 +1,10 @@
-### Açıklama
+* ### Açıklama
     - Bu çalışmada alt componentten üst componente mesaj gönderme amaçlanmıştır.
     - React tarafında bu işlemi yapmak için RxJS kullanılmıştır.
     - Rx Js ile Home componentinden mesaj gönderilerek App componenti bu mesajlardan haberdar edilmiştir.
     - Rx Js normalde bu mesajları iletirken state değiştirip erkanı render etmez. Ancak çalışmada mesaj gelikçe state değiştirilerek ekran rereder edilmiştir.
 
-### Bağımlılıklar
+* ### Bağımlılıklar
     package.json dosyasına aşağıdaki şekilde Rx.js eklenir.
     ```
     ...
@@ -12,7 +12,7 @@
     ...
     ```
 
-### services.js
+* ### services.js
     - services.js dosyasında rxjs üzerinden bir Subject instance'ı yaratılır.
     - messageService adında bir obje yaratılarak Subject'in next() ve asObservable() methodları birer fonksiyon olarak tanımlanır.
     ```
@@ -27,7 +27,7 @@
     };
     ```
 
-### App.js
+* ### App.js
     - services.js dosyasında export edilen messageService'e subscribe olunarak alt componentten gelecek mesajlar dinlenir.
     - Alt componentten her mesaj gönderilme işleminden sonra state teki messages[] array'i doldurularak ekran render edilir.
     ```
@@ -43,7 +43,7 @@
     ``` 
 
 
-### Home.js
+* ### Home.js
     - Bu componette services.js te export edilen messageService üzerinden rxjs ile mesaj gönderilme işlemi yapılmıştır. 
     - Mesaj gönderme işlemi aşağıdaki gibidir.
 
@@ -53,6 +53,6 @@
     }
     ```
 
-### References
-    https://jasonwatmore.com/post/2019/02/13/react-rxjs-communicating-between-components-with-observable-subject
-
+* ### References
+- https://jasonwatmore.com/post/2019/02/13/react-rxjs-communicating-between-components-with-observable-subject
+- https://blog.logrocket.com/rxjs-with-react-hooks-for-state-management/
