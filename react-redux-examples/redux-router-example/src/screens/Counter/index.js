@@ -10,7 +10,7 @@ class Counter extends Component {
         const {mainState, onIncrement, onDecrement} = this.props
         return (
             <p>
-                Count : {mainState.count}
+                Count (From Redux) : {mainState.count}
                 <br/>
                 <button onClick={onIncrement}> +</button>
                 <button onClick={onDecrement}> -</button>

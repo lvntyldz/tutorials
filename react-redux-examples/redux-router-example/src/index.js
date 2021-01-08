@@ -10,6 +10,7 @@ import counter from './reducers';
 import Counter from './screens/Counter';
 import Login from './screens/Login';
 import Home from './screens/Home';
+import Customer from './screens/Customer';
 
 const store = createStore(counter)
 
@@ -26,6 +27,7 @@ const getNavBarView = () => {
             <Nav className="mr-auto">
                 <Link className="nav-link" to="/home">home</Link>
                 <Link className="nav-link" to="/counter">counter</Link>
+                <Link className="nav-link" to="/customer">customer</Link>
                 <Link className="nav-link" onClick={() => store.dispatch({type: actionTypes.LOGOUT})}
                       to="/login">logout</Link>
             </Nav>
@@ -48,6 +50,11 @@ const render = () => ReactDOM.render(
                             mainState={store.getState()}
                             onIncrement={() => store.dispatch({type: actionTypes.INCREMENT})}
                             onDecrement={() => store.dispatch({type: actionTypes.DECREMENT})}
+                        />
+                    </Route>
+                    <Route path="/customer">
+                        <Customer
+                            mainState={store.getState()}
                         />
                     </Route>
                     <Route path="/">
