@@ -6,17 +6,24 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Link, Route, Switch
-} from "react-router-dom"
-import { createStore } from 'redux'
-import { actionTypes } from './actionTypes'
-import counter from './reducers'
-import Counter from './screens/Counter'
-import Login from './screens/Login'
-
+} from "react-router-dom";
+import { createStore } from 'redux';
+import { actionTypes } from './actionTypes';
+import counter from './reducers';
+import Counter from './screens/Counter';
+import Login from './screens/Login';
 
 
 export const Home = () => {
   return <div>Home</div>
+}
+
+export const Home2 = () => {
+  return <div>Home2</div>
+}
+
+export const Login2 = () => {
+  return <div>Login2</div>
 }
 
 const store = createStore(counter)
@@ -47,20 +54,20 @@ const render = () => ReactDOM.render(
         {getNavBarView()}
 
         <Switch>
-        <Route path="/home">
+          <Route path="/home">
             <Home />
-          </Route>
-          <Route path="/">
-            <Login
-              mainState={store.getState()}
-              setAuthData={() => store.dispatch({ type: actionTypes.AUTH_DATA })}
-            />
           </Route>
           <Route path="/counter">
             <Counter
               mainState={store.getState()}
               onIncrement={() => store.dispatch({ type: actionTypes.INCREMENT })}
               onDecrement={() => store.dispatch({ type: actionTypes.DECREMENT })}
+            />
+          </Route>
+          <Route path="/">
+            <Login
+              mainState={store.getState()}
+              setAuthData={(data) => store.dispatch({ type: actionTypes.AUTH_DATA, data: data })}
             />
           </Route>
         </Switch>
