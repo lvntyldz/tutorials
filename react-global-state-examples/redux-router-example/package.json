@@ -17,7 +17,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "killPort":"kill -9 $(lsof -ti :3000)",
+    "start": "npm run killPort; react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
