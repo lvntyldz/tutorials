@@ -18,7 +18,13 @@ const doLogout = (state) => {
   return newState
 }
 
-const initialState = { count: 0, auth: null };
+const setAuthToState = (state) => {
+  let newState = { ...state };
+  newState.auth = {token:"yes"};
+  return newState
+}
+
+const initialState = { count: 0, auth: {token:"default"} };
 export default (state = initialState, action) => {
 
   switch (action.type) {
@@ -31,6 +37,9 @@ export default (state = initialState, action) => {
 
     case actionTypes.LOGOUT:
       return doLogout(state)
+
+    case actionTypes.AUTH_DATA:
+      return setAuthToState(state);
 
     default:
       return state

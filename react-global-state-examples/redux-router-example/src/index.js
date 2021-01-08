@@ -9,14 +9,11 @@ import {
 } from "react-router-dom"
 import { createStore } from 'redux'
 import { actionTypes } from './actionTypes'
-import Counter from './components/Counter'
 import counter from './reducers'
+import Counter from './screens/Counter'
+import Login from './screens/Login'
 
 
-
-export const Login = () => {
-  return <div>Login</div>
-}
 
 export const Home = () => {
   return <div>Home</div>
@@ -50,11 +47,14 @@ const render = () => ReactDOM.render(
         {getNavBarView()}
 
         <Switch>
-          <Route path="/">
-            <Login />
-          </Route>
-          <Route path="/home">
+        <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/">
+            <Login
+              mainState={store.getState()}
+              setAuthData={() => store.dispatch({ type: actionTypes.AUTH_DATA })}
+            />
           </Route>
           <Route path="/counter">
             <Counter
