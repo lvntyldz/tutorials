@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Form, FormGroup, Button } from 'react-bootstrap';
-import { useHistory } from "react-router-dom";
+import React, {useState} from 'react';
+import {Button, Form} from 'react-bootstrap';
+import {useHistory} from "react-router-dom";
 import PropTypes from 'prop-types'
 
 const Login = props => {
@@ -20,7 +20,7 @@ const Login = props => {
     const handleLoginClick = () => {
 
         if (username === password) {
-            props.setAuthData({ token: "aa-bb-cc" });
+            props.setAuthData({token: "aa-bb-cc"});
             history.push("/home");
             return;
         }
@@ -30,18 +30,18 @@ const Login = props => {
     }
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 200 }}>
-            <Form style={{ width: 400 }}>
+        <div style={{display: 'flex', justifyContent: 'center', marginTop: 200}}>
+            <Form style={{width: 400}}>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>username</Form.Label>
-                    <Form.Control type="text" placeholder="username" onChange={handleUsernameChange} />
+                    <Form.Control type="text" placeholder="username" onChange={handleUsernameChange}/>
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={handlePasswordChange} />
+                    <Form.Control type="password" placeholder="Password" onChange={handlePasswordChange}/>
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={handleLoginClick} > Login  </Button>
+                <Button variant="primary" type="submit" onClick={handleLoginClick}> Login </Button>
             </Form>
         </div>
     );
@@ -50,7 +50,7 @@ const Login = props => {
 
 Login.propTypes = {
     mainState: PropTypes.object.isRequired,
-  }
-  
+}
+
 
 export default Login;
