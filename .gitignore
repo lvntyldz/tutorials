@@ -70,6 +70,9 @@ buck-out/
 *.iws
 *.iml
 *.ipr
+out/
+target/
+/target/
 
 ### NetBeans ###
 /nbproject/private/
@@ -78,6 +81,18 @@ buck-out/
 /nbdist/
 /.nb-gradle/
 build/
+.class
+*.class
 
 ### VS Code ###
 .vscode/
+
+### Office ###
+*.tmp
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+~$*
+
+*.jar
