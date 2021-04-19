@@ -1,6 +1,6 @@
 ### Açıklama 
 RabbitMQ kurulumu ve Sprgin ile impelementasyonu aşağıdaki adresdedir. 
-[index için tıklayın](../spring-rabbit-mq-example/README.md)
+[index için tıklayın](../1-spring-rabbit-mq-example/README.md)
 
 ### Configration eklenmesi
 Connection factory'i içeren RabbitTransactionManager aşağıdaki gibi Bean olarak yaratılır.

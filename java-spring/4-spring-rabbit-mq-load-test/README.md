@@ -3,7 +3,7 @@
 - Manual Ack ve Nack işlemi yapılan bir çalışmadır.
 - Lokal makinede JMeter ile eş zamanlı 1000 bağlantının test sonucu gözlemlenmiştir.
 - RabbitMQ kurulumu ve Sprgin ile impelementasyonu aşağıdaki adresdedir. 
-[index için tıklayın](../spring-rabbit-mq-example/README.md)
+[index için tıklayın](../1-spring-rabbit-mq-example/README.md)
 - JMetter ayarları için aşağıdaki adres incelenebilir.
 https://howtodoinjava.com/java/library/jmeter-beginners-tutorial/
 

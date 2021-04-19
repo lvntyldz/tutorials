@@ -2,7 +2,7 @@
 - Bu çalışmada Spring üzerinden RabbitMQ'ya gönderilen mesajların ulaşıp ulaşmadığı incelenmiştir.
 - Aynı zamanda RabbitMQ dan mesajlar tüketilirken bir sorun olması durumunda mesaj yeniden rabbitMQ'ya kuyruklanmıştır.
 - RabbitMQ kurulumu ve Sprgin ile impelementasyonu aşağıdaki adresdedir. 
-[index için tıklayın](../spring-rabbit-mq-example/README.md)
+[index için tıklayın](../1-spring-rabbit-mq-example/README.md)
 
 
 ### Configration eklenmesi
