@@ -43,12 +43,13 @@ public class RabbitMQConfiguration {
     }
 
     @Bean
-    public Binding binding(@Qualifier("userQueue") Queue queue, @Qualifier("userExchange") DirectExchange exchange) {
+    public Binding userBinding(@Qualifier("userQueue") Queue queue,
+            @Qualifier("userExchange") DirectExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(mqProperites.getUserDataRoutingKey());
     }
 
     @Bean
-    public Binding binding2(@Qualifier("msgQueue") Queue queue, @Qualifier("msgExchange") DirectExchange exchange) {
+    public Binding msgBinding(@Qualifier("msgQueue") Queue queue, @Qualifier("msgExchange") DirectExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(mqProperites.getMessageDataRoutingKey());
     }
 
