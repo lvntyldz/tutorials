@@ -1,20 +1,28 @@
 import React from 'react';
 import {Pressable, StyleSheet, Text, View} from 'react-native';
-import {useNavigation} from "@react-navigation/native";
+import {useNavigation, useRoute} from '@react-navigation/native';
 
 export const Confirm = () => {
+  let params = useRoute().params || {};
+  const {confirmEmail} = params;
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text>Confirmation screen</Text>
+      {confirmEmail && <Text>{confirmEmail} is confirmed</Text>}
       <Pressable
-        onPress={() => navigation.navigate("Login")}
+        onPress={() => navigation.navigate('Login')}
         style={styles.loginBtn}>
         <Text>Go to LOGIN</Text>
       </Pressable>
+      <Pressable
+        onPress={() => navigation.navigate('Home')}
+        style={styles.loginBtn}>
+        <Text>Go to Home</Text>
+      </Pressable>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
