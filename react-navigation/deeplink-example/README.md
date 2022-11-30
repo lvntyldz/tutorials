@@ -12,3 +12,6 @@ $ npx uri-scheme open deeplinkapp://confirm/aa@bb.cc  --android
 ```
 $ npx uri-scheme open deeplinkapp://confirm/aa@bb.cc  --ios
 ```
+
+### PS: For the universal link, you can watch the following good  record
+https://www.youtube.com/watch?v=rvDq2WMU4mw 
